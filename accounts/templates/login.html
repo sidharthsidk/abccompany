@@ -1,0 +1,27 @@
+{% extends 'accounts_base.html' %}
+{% block content %}
+<h1 id="login" class="text-center"
+    style="padding:60px;font-family:'Open Sans',sans-serif; ;font-weight: bold;color:rgb(18, 12, 78)">Employe
+    Login</h1>
+<div class="container">
+    <div class="row" style="row-gap: 20px;">
+        <div class="col-sm-4 offset-sm-4">
+            <form method="POST">
+                {{ form.as_p }}
+                {% csrf_token %}
+                <hr>
+                <button class="btn btn-success btn-block"><p class="fas fa-user-lock">Login</p></button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block footer %}
+<script>
+    document.querySelectorAll('input').forEach(e => {
+        e.classList.add('form-control')
+    })
+</script>
+{% include 'user_footer.html' %}
+{% endblock footer %}

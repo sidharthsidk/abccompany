@@ -1,0 +1,23 @@
+{% extends 'user_base.html' %}
+
+{% block meta %}
+
+<title>Employe Details</title>
+{% endblock meta %}
+{% block content %}
+<div class="container" >
+    <div class="row">
+        <div class="col-sm-4 offset-sm-4">
+            <div class="solid">
+                <img src="{{ data.image.url }}" class="img-fluid" alt="Responsive image">
+                <p>Name : {{ data.name }}</p>
+                <p>Designation: {{ data.designation }}</p>
+                <p>Email: {{ data.email }}</p>
+                <p>Ph: {{ data.phone }}</p>
+                <p>Address: {{ data.address }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
