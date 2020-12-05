@@ -7,12 +7,12 @@ class EmployeCreation(models.Model):
         primary_key=True,
     )
     DESIG = (
-        ('se','Software Engineer'),
-        ('te','Test Engineer'),
-        ('dp','Devoleper'),
-        ('ba','Bussiness Analyst'),
-        ('ae','AI Engineer'),
-        ('dev','Devops Engineer')
+        ('SOFTWARE ENGINEER','Software Engineer'),
+        ('TEST ENGINEER','Test Engineer'),
+        ('DEVELOPER','Devoleper'),
+        ('BUSSINESS ANALYST','Bussiness Analyst'),
+        ('AI ENGINEER','AI Engineer'),
+        ('DEVOOPS ENGINEER','Devops Engineer')
     )
 
     name = models.CharField(
